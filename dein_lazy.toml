@@ -1,0 +1,11 @@
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'wokalski/autocomplete-flow'
+on_ft = ['js']
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['html', 'xml', 'css', 'sass', 'scss']

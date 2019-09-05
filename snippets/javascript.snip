@@ -1,0 +1,103 @@
+snippet let statement
+alias   ls
+  let ${1};
+
+snippet let assignment
+alias   la
+  let ${1} = ${2};
+
+snippet const statement
+alias   cs
+  const ${1};
+
+snippet const assignment
+alias   ca
+  const ${1} = ${2};
+
+
+snippet if statement
+alias   if
+  if (${1}) {
+    ${2}
+  }
+
+snippet if/else statement
+alias   ife
+  if (${1}) {
+    ${2}
+  } else {
+    ${3}
+  }
+
+snippet for statement
+alias   for
+  for (${1}) {
+    ${2}
+  }
+
+snippet ternary operator
+alias   to
+  ${1} ? ${2} : ${3};
+
+
+snippet function
+alias   fn
+  function ${1}(${2}) {
+    ${3}
+  }
+
+snippet arrow function
+alias   af
+  (${1}) => ${2})
+
+snippet arrow function with body
+alias   afb
+  (${1}) => {
+    ${2}
+  }
+
+snippet require assignment
+alias   req
+  const ${1} = require('${2}');
+
+snippet require assignment local
+alias   reql
+  const ${1} = require('./${2}');
+
+snippet module export
+alias   me
+  module.export = ${1};
+
+snippet module export object
+alias   meo
+  module.export = {
+    ${1}
+  }
+
+snippet console.log
+alias   cl
+  console.log(${1})
+
+snippet console.error
+alias   ce
+  console.error(${1})
+
+snippet console.warn
+alias   cw
+  console.warn(${1})
+
+snippet console.log labeled
+alias   cll
+  console.log('${1}': ${1})
+
+snippet console.error labeled
+alias   cel
+  console.error('${1}': ${1})
+
+snippet console.warn labeled
+alias   cwl
+  console.warn('${1}': ${1})
+
+snippet insert 'use static' statement
+alias   us
+  'use static';
