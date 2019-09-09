@@ -3,9 +3,13 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 [[plugins]]
-repo = 'wokalski/autocomplete-flow'
-on_ft = ['js']
+repo = 'mattn/emmet-vim'
+on_ft = ['html', 'xml', 'css', 'sass', 'scss', 'ejs']
 
 [[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html', 'xml', 'css', 'sass', 'scss']
+repo = 'othree/yajs.vim'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'marijnh/tern_for_vim'
+on_ft = ['javascript']

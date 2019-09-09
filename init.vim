@@ -52,6 +52,7 @@ set virtualedit=block " vim の矩形選択で文字が無くても右へ進め�
 set backspace=indent,eol,start " 挿入モードでバックスペースで削除できるようにする
 set ambiwidth=double " 全角文字専用の設定
 set wildmenu " wildmenuオプションを有効(vimバーからファイルを選択できる)
+set helplang=ja,en " :help を日本語化
 set clipboard=unnamedplus " ヤンクでクリップボードにコピー
 
 "----------------------------------------
@@ -80,15 +81,16 @@ set expandtab " 入力モードでTabキー押下時に半角スペースを挿�
 set shiftwidth=2 " インデント幅
 set softtabstop=2 " タブキー押下時に挿入される文字幅を指定
 set tabstop=2 " ファイル内にあるタブ文字の表示幅
-set showmatch " 対応する括弧を強調表示
+set autoindent " 改行時に前の行のインデントを継続する
 set smartindent " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
+set showmatch " 対応する括弧を強調表示
 set nofoldenable " 検索にマッチした行以外を折りたたむ(フォールドする)機能
 set title " タイトルを表示
 set number " 行番号の表示
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC> " Escの2回押しでハイライト消去
 syntax on " シンタックスハイライト
 set nrformats= " すべての数を10進数として扱う
-set whichwrap=b,s,h,l,<,>,[,],~ " 行をまたいで移動
+set whichwrap=b,s,h,l,<,>,[,],~ " カーソルの左右移動で行末から次の行の行頭への移動が可能になる
 
 " Mapping ------------------------------------------------------------------
 
